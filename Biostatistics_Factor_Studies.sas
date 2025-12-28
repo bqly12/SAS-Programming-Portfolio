@@ -149,7 +149,7 @@ of the three levels separately for each ingredient. Use Tukey’s method for all
 
 /*We will (1) compare the change in the mean of factor A as its level increases for each level of B. This
 is because we already found a significant interaction beteween the two factors.*/
-/*Using Tukey's method, we see that...*/
+/*Using Tukey's method, we see this exact result*/
 
 
 
