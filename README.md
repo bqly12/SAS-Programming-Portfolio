@@ -11,7 +11,7 @@ This repository serves as a collection of SAS programming projects completed dur
 
 ### 2. Sleep Apnea Analysis
 * **Context**: Independent analysis of a small health dataset from a machine learning repository.
-* **Key Skills**: Performed data wrangling to create categorical bins and dummy variables. Conducted ***one-way ANOVA*** and ***ANCOVA*** to model Apnea Hypopnea Index (AHI) trends, controlling for oxygen saturation. Used `PROC GLM` for interaction testing and Tukey's post hoc analysis, and validated model assumptions using `PROC REG` residual diagnostics. 
+* **Key Skills**: Performed data wrangling to create categorical bins and dummy variables. Conducted ***One-Way ANOVA*** and ***ANCOVA*** to model Apnea Hypopnea Index (AHI) trends, controlling for oxygen saturation. Used `PROC GLM` for interaction testing and Tukey's post hoc analysis, and validated model assumptions using `PROC REG` residual diagnostics. 
 
 ### 3. Model Selection Techniques
 * **Context**: Comparative analysis of prostate cancer dataset to identify key biological predictors.
