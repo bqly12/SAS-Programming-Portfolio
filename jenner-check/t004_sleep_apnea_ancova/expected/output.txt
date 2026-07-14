@@ -1,0 +1,234 @@
+
+  Obs  ESS   AHI  SaO2avg
+-----  ---  ----  -------
+    1    3   4.1     96.2
+    2    5   6.8     95.1
+    3    2   3.2       97
+    4    8  12.4     93.8
+    5    7   9.1     94.6
+    6   10  15.7     92.9
+    7    6   8.3       95
+    8    9  14.2     93.1
+    9   11  21.6     91.4
+   10   12  24.9     90.7
+   11   11  19.8       92
+   12   13  28.3     89.5
+   13   14  31.1     88.9
+   14   15  34.7     87.6
+   15   13  26.5     90.1
+   16   16  41.2     86.3
+   17   20  52.8     84.1
+   18   18  47.6       85
+   19   24  61.4     82.7
+   20   16  39.9     86.8
+   21   17  44.1     85.5
+   22    5   5.9     95.6
+   23    6   7.7     94.9
+   24    4   4.8       96
+   25   21  55.3     83.9
+
+  Obs     ESS_0  ESS   AHI  SaO2avg  Var_Low  Var_High  Var_Mild  Var_Mod  Var_Extr
+-----  --------  ---  ----  -------  -------  --------  --------  -------  --------
+    1  LowNorm     3   4.1     96.2        1         0         0        0         0
+    2  LowNorm     5   6.8     95.1        1         0         0        0         0
+    3  LowNorm     2   3.2       97        1         0         0        0         0
+    4  HighNorm    8  12.4     93.8        0         1         0        0         0
+    5  HighNorm    7   9.1     94.6        0         1         0        0         0
+    6  HighNorm   10  15.7     92.9        0         1         0        0         0
+    7  HighNorm    6   8.3       95        0         1         0        0         0
+    8  HighNorm    9  14.2     93.1        0         1         0        0         0
+    9  Mild       11  21.6     91.4        0         0         1        0         0
+   10  Mild       12  24.9     90.7        0         0         1        0         0
+   11  Mild       11  19.8       92        0         0         1        0         0
+   12  Mod        13  28.3     89.5        0         0         0        1         0
+   13  Mod        14  31.1     88.9        0         0         0        1         0
+   14  Mod        15  34.7     87.6        0         0         0        1         0
+   15  Mod        13  26.5     90.1        0         0         0        1         0
+   16  Extr       16  41.2     86.3        0         0         0        0         1
+   17  Extr       20  52.8     84.1        0         0         0        0         1
+   18  Extr       18  47.6       85        0         0         0        0         1
+   19  Extr       24  61.4     82.7        0         0         0        0         1
+   20  Extr       16  39.9     86.8        0         0         0        0         1
+   21  Extr       17  44.1     85.5        0         0         0        0         1
+   22  LowNorm     5   5.9     95.6        1         0         0        0         0
+   23  HighNorm    6   7.7     94.9        0         1         0        0         0
+   24  LowNorm     4   4.8       96        1         0         0        0         0
+   25  Extr       21  55.3     83.9        0         0         0        0         1
+
+  Obs   AHI  SaO2avg     ESS_0  Var_Low  Var_High  Var_Mild  Var_Mod  Var_Extr
+-----  ----  -------  --------  -------  --------  --------  -------  --------
+    1   4.1     96.2  LowNorm         1         0         0        0         0
+    2   6.8     95.1  LowNorm         1         0         0        0         0
+    3   3.2       97  LowNorm         1         0         0        0         0
+    4  12.4     93.8  HighNorm        0         1         0        0         0
+    5   9.1     94.6  HighNorm        0         1         0        0         0
+    6  15.7     92.9  HighNorm        0         1         0        0         0
+    7   8.3       95  HighNorm        0         1         0        0         0
+    8  14.2     93.1  HighNorm        0         1         0        0         0
+    9  21.6     91.4  Mild            0         0         1        0         0
+   10  24.9     90.7  Mild            0         0         1        0         0
+   11  19.8       92  Mild            0         0         1        0         0
+   12  28.3     89.5  Mod             0         0         0        1         0
+   13  31.1     88.9  Mod             0         0         0        1         0
+   14  34.7     87.6  Mod             0         0         0        1         0
+   15  26.5     90.1  Mod             0         0         0        1         0
+   16  41.2     86.3  Extr            0         0         0        0         1
+   17  52.8     84.1  Extr            0         0         0        0         1
+   18  47.6       85  Extr            0         0         0        0         1
+   19  61.4     82.7  Extr            0         0         0        0         1
+   20  39.9     86.8  Extr            0         0         0        0         1
+   21  44.1     85.5  Extr            0         0         0        0         1
+   22   5.9     95.6  LowNorm         1         0         0        0         0
+   23   7.7     94.9  HighNorm        0         1         0        0         0
+   24   4.8       96  LowNorm         1         0         0        0         0
+   25  55.3     83.9  Extr            0         0         0        0         1
+
+                                                   AHI by ESS Scores
+
+PROC SGPANEL Output
+Data: OSA
+
+Variables: AHI, SaO2avg, ESS_0, Var_Low, Var_High, Var_Mild, Var_Mod, Var_Extr
+
+       AHI     SaO2avg       ESS_0     Var_Low    Var_High    Var_Mild     Var_Mod    Var_Extr
+----------  ----------  ----------  ----------  ----------  ----------  ----------  ----------
+       4.1        96.2     LowNorm           1           0           0           0           0
+       6.8        95.1     LowNorm           1           0           0           0           0
+       3.2          97     LowNorm           1           0           0           0           0
+      12.4        93.8    HighNorm           0           1           0           0           0
+       9.1        94.6    HighNorm           0           1           0           0           0
+      15.7        92.9    HighNorm           0           1           0           0           0
+       8.3          95    HighNorm           0           1           0           0           0
+      14.2        93.1    HighNorm           0           1           0           0           0
+      21.6        91.4        Mild           0           0           1           0           0
+      24.9        90.7        Mild           0           0           1           0           0
+      19.8          92        Mild           0           0           1           0           0
+      28.3        89.5         Mod           0           0           0           1           0
+      31.1        88.9         Mod           0           0           0           1           0
+      34.7        87.6         Mod           0           0           0           1           0
+      26.5        90.1         Mod           0           0           0           1           0
+      41.2        86.3        Extr           0           0           0           0           1
+      52.8        84.1        Extr           0           0           0           0           1
+      47.6          85        Extr           0           0           0           0           1
+      61.4        82.7        Extr           0           0           0           0           1
+      39.9        86.8        Extr           0           0           0           0           1
+      44.1        85.5        Extr           0           0           0           0           1
+       5.9        95.6     LowNorm           1           0           0           0           0
+       7.7        94.9    HighNorm           0           1           0           0           0
+       4.8          96     LowNorm           1           0           0           0           0
+      55.3        83.9        Extr           0           0           0           0           1
+
+AHI: N=25, Min=3.2000, Max=61.4000, Mean=24.8560, Sum=621.4000
+SaO2avg: N=25, Min=82.7000, Max=97.0000, Mean=90.7480, Sum=2268.7000
+Var_Low: N=25, Min=0.0000, Max=1.0000, Mean=0.2000, Sum=5.0000
+Var_High: N=25, Min=0.0000, Max=1.0000, Mean=0.2400, Sum=6.0000
+Var_Mild: N=25, Min=0.0000, Max=1.0000, Mean=0.1200, Sum=3.0000
+Var_Mod: N=25, Min=0.0000, Max=1.0000, Mean=0.1600, Sum=4.0000
+Var_Extr: N=25, Min=0.0000, Max=1.0000, Mean=0.2800, Sum=7.0000
+                                                   AHI by ESS Scores
+
+                         The GLM Procedure                         
+                      Dependent Variable: ahi                      
+
+Source          DF  Sum of Squares  Mean Square   F Value    Pr > F
+--------  --------  --------------  -----------  --------  --------
+ESS_0            4      7274.40627   1818.60157     73.77    <.0001
+Error           20       493.05533     24.65277                    
+
+Root MSE           4.96516    R-Square            0.9365
+Adj R-Sq            0.9238
+
+       Means for Effect: ESS_0        
+
+Level         Mean   Std Dev         N
+--------  --------  --------  --------
+Extr      48.90000   7.93137         7
+HighNorm  11.23333   3.33926         6
+LowNorm    4.96000   1.42583         5
+Mild      22.10000   2.58650         3
+Mod       30.15000   3.57538         4
+
+                                                   AHI by ESS Scores
+
+                                                   The REG Procedure                                                    
+                                                     Model: MODEL1                                                      
+                                                Dependent Variable: AHI                                                 
+
+Source                 DF  Sum of Squares  Mean Square   F Value    Pr > F
+---------------  --------  --------------  -----------  --------  --------
+Model                   4      7274.40627   1818.60157     73.77    <.0001
+Error                  20       493.05533     24.65277                    
+Corrected Total        24      7767.46160                                 
+
+Root MSE           4.96516    R-Square            0.9365
+Dependent Mean      24.85600    Adj R-Sq            0.9238
+Coeff Var         19.97568
+
+                       Parameter Estimates                        
+
+Variable         DF   Estimate  Standard Error   t Value  Pr > |t|
+---------  --------  ---------  --------------  --------  --------
+Intercept         1   19.55722         0.86509     22.61    <.0001
+Var_Low           1  -14.59722         2.00884     -7.27    <.0001
+Var_High          1   -8.32389         1.86751     -4.46    0.0002
+Var_Mild          1    2.54278         2.49535      1.02    0.3204
+Var_Mod           1   10.59278         2.20390      4.81    0.0001
+Var_Extr          1   29.34278         1.75962     16.68    <.0001
+
+                                                   AHI by ESS Scores
+
+                           The GLM Procedure                            
+                        Dependent Variable: ahi                         
+
+Source               DF  Sum of Squares  Mean Square   F Value    Pr > F
+-------------  --------  --------------  -----------  --------  --------
+SaO2avg               1       371.31788    371.31788    705.02    <.0001
+ESS_0                 4        31.86309      7.96577     15.12    <.0001
+SaO2avg:ESS_0         4        32.69324      8.17331     15.52    <.0001
+Error                15         7.90017      0.52668                    
+
+Root MSE           0.72573    R-Square            0.9990
+Adj R-Sq            0.9984
+
+                                                   AHI by ESS Scores
+
+                         The GLM Procedure                         
+                      Dependent Variable: ahi                      
+
+Source          DF  Sum of Squares  Mean Square   F Value    Pr > F
+--------  --------  --------------  -----------  --------  --------
+SaO2avg          1       452.46192    452.46192    211.78    <.0001
+ESS_0            4        24.16877      6.04219      2.83    0.0537
+Error           19        40.59341      2.13650                    
+
+Root MSE           1.46168    R-Square            0.9948
+Adj R-Sq            0.9934
+
+                                                   AHI by ESS Scores
+
+                                                   The REG Procedure                                                    
+                                                     Model: MODEL1                                                      
+                                                Dependent Variable: AHI                                                 
+
+Source                 DF  Sum of Squares  Mean Square   F Value    Pr > F
+---------------  --------  --------------  -----------  --------  --------
+Model                   5      7726.86819   1545.37364    723.32    <.0001
+Error                  19        40.59341      2.13650                    
+Corrected Total        24      7767.46160                                 
+
+Root MSE           1.46168    R-Square            0.9948
+Dependent Mean      24.85600    Adj R-Sq            0.9934
+Coeff Var          5.88057
+
+                       Parameter Estimates                        
+
+Variable         DF   Estimate  Standard Error   t Value  Pr > |t|
+---------  --------  ---------  --------------  --------  --------
+Intercept         1  356.74950        23.17202     15.40    <.0001
+SaO2avg           1   -4.44335         0.30533    -14.55    <.0001
+Var_Low           1   74.68326         6.16346     12.12    <.0001
+Var_High          1   72.38093         5.57292     12.99    <.0001
+Var_Mild          1   71.32461         4.78318     14.91    <.0001
+Var_Mod           1   68.96976         4.06358     16.97    <.0001
+Var_Extr          1   69.39094         2.80029     24.78    <.0001
+

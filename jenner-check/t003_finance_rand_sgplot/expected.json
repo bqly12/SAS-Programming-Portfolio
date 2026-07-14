@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-14T15:57:37.523144Z",
+  "_captured_run_id": "r_0ba4201ebf3b434fa91476a8d9e111f9",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote Five_a (100 rows, 2 columns).",
+    "NOTE: PROC PRINT completed: 100 observations printed, 2 variables",
+    "NOTE: PROC SGPLOT data=Five_a",
+    "NOTE: Wrote Five_b (100 rows, 2 columns)."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

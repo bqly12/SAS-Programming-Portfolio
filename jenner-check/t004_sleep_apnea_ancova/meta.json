@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_sleep_apnea_ancova",
+  "source_file": "Sleep_Apnea.sas",
+  "source_blob_sha": "9c480274db79566055b261c5f839da22f0102dab",
+  "source_commit": "cc2251bce6aede404e07a74decf5f703c57729a1",
+  "notes": "Sleep-apnea analysis, author's logic verbatim. Only the leading PROC IMPORT (external xlsx not in repo) is replaced with a 25-row inline DATALINES sample carrying the columns the analysis reads (ESS, AHI, SaO2avg). All downstream code unchanged: ESS categorical binning + dummy variables, SGPLOT/SGPANEL, one-way ANOVA (PROC GLM), REG residual diagnostics, and ANCOVA with/without interaction (SaO2avg|ESS_0). ANCOVA Type III F-table for the SaO2avg covariate resolves cleanly."
+}

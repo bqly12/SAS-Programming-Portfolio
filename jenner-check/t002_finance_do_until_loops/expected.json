@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-14T15:56:40.524805Z",
+  "_captured_run_id": "r_b7c94bea5a3944c2a60a1e8b914d71ed",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote work.future_costs (10 rows, 7 columns).",
+    "NOTE: Wrote work.future_costs (4 rows, 9 columns).",
+    "NOTE: Wrote work.expenses (26 rows, 4 columns).",
+    "NOTE: PROC PRINT completed: 26 observations printed, 4 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

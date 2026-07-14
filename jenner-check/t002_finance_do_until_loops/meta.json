@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_finance_do_until_loops",
+  "source_file": "Finance_Simulation_Loops.sas",
+  "source_blob_sha": "4367b8c5f8afbc40f6dfed1c51ed19e8ac48da59",
+  "source_commit": "cc2251bce6aede404e07a74decf5f703c57729a1",
+  "notes": "Questions 2 and 3 of the finance-simulation script, verbatim: iterative DATA-step DO loops with sum-statement accumulators, including bounded DO...UNTIL loops (TotalCost>Income; Expense>Income OR i>30) and DOLLAR15.2 formatting via PROC PRINT. Self-contained (all inputs are literals); no external data or substitution. The UNTIL loop in Part b converges to 4 rows, expenses to 26 rows."
+}
