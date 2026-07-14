@@ -1,0 +1,67 @@
+
+  Obs  Strain  Count
+-----  ------  -----
+    1  A           9
+    2  B           3
+    3  C          30
+    4  D          44
+    5  A          27
+    6  B          12
+    7  C          47
+    8  D          38
+    9  A          22
+   10  B           7
+   11  C          50
+   12  D          37
+   13  A          30
+   14  B          15
+   15  C          52
+   16  D          49
+   17  A          16
+   18  B          12
+   19  C          26
+   20  D          40
+
+  Obs  Strain  Count
+-----  ------  -----
+    1  A           9
+    2  A          27
+    3  A          22
+    4  A          30
+    5  A          16
+    6  B           3
+    7  B          12
+    8  B           7
+    9  B          15
+   10  B          12
+   11  C          30
+   12  C          47
+   13  C          50
+   14  C          52
+   15  C          26
+   16  D          44
+   17  D          38
+   18  D          37
+   19  D          49
+   20  D          40
+
+                         The GLM Procedure                         
+                     Dependent Variable: count                     
+
+Source          DF  Sum of Squares  Mean Square   F Value    Pr > F
+--------  --------  --------------  -----------  --------  --------
+Strain           3      3683.40000   1227.80000     18.55    <.0001
+Error           16      1058.80000     66.17500                    
+
+Root MSE           8.13480    R-Square            0.7767
+Adj R-Sq            0.7349
+
+       Means for Effect: Strain       
+
+Level         Mean   Std Dev         N
+--------  --------  --------  --------
+A         20.80000   8.46759         5
+B          9.80000   4.76445         5
+C         41.00000  12.08305         5
+D         41.60000   4.92950         5
+

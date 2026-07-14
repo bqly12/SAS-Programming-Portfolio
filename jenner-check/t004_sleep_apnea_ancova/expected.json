@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-14T15:59:10.423100Z",
+  "_captured_run_id": "r_773360e2339b4419b9203caff4c7b250",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote OSA (25 rows, 8 columns).",
+    "NOTE: PROC GLM data=OSA",
+    "NOTE: PROC REG data=OSA",
+    "NOTE: PROC GLM ODS Graphics generated."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

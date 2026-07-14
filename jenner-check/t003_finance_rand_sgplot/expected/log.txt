@@ -1,0 +1,26 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260714T061458Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA Five_a
+
+
+NOTE: Wrote Five_a (100 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=Five_a
+
+NOTE: PROC PRINT completed: 100 observations printed, 2 variables
+NOTE: PROC SGPLOT data=Five_a
+
+NOTE: PROC SGPLOT output written to: ./ods_output/sgplot.svg
+NOTE: DATA Five_b
+
+
+NOTE: Wrote Five_b (100 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SGPLOT data=Five_b
+
+NOTE: PROC SGPLOT output written to: ./ods_output/sgplot1.svg

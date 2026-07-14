@@ -1,0 +1,7 @@
+{
+  "bundle": "t005_model_selection_reg",
+  "source_file": "Model_Selection_Techniques.sas",
+  "source_blob_sha": "63822c1a73e519986a750cca46f589f04ed4c3bd",
+  "source_commit": "cc2251bce6aede404e07a74decf5f703c57729a1",
+  "notes": "Model-selection script, author's logic verbatim. Only the leading INFILE read of prostate.txt (not in repo) is replaced with a 30-row inline DATALINES sample of the same shape (Obs Y X1-X8). Downstream unchanged: PROC REG SELECTION=Forward/Backward/Stepwise, then SELECTION with CP/AIC/BIC/ADJRSQ + OUTEST=EST, followed by four PROC SORT/PRINT rankings on _CP_/_ADJRSQ_/_AIC_/_BIC_. Forward selection enters x1/x8/x5 first, matching how the sample was constructed."
+}

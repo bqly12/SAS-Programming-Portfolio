@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_finance_rand_sgplot",
+  "source_file": "Finance_Simulation_Loops.sas",
+  "source_blob_sha": "4367b8c5f8afbc40f6dfed1c51ed19e8ac48da59",
+  "source_commit": "cc2251bce6aede404e07a74decf5f703c57729a1",
+  "notes": "Question 5 of the finance-simulation script, verbatim: DATA-step DO loops generating 100 synthetic draws via RAND('normal') and RAND('LOGnormal'), each visualized with PROC SGPLOT HISTOGRAM + DENSITY. Self-contained; no external data. The X draws are random per run so only structural fields are pinned (100 rows, SGPLOT SVG written); the pinned NOTEs matched byte-for-byte across two consecutive POSTs."
+}

@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-14T15:55:41.950616Z",
+  "_captured_run_id": "r_1070b13621fe41c983798d71a590d416",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Read 20 rows from DATALINES.",
+    "NOTE: Wrote Bacteria (20 rows, 2 columns).",
+    "NOTE: PROC GLM data=Bacteria",
+    "NOTE: PROC GLM ODS Graphics generated."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}
